@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="319dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="51sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="HELLO SHREYASI!"
+        android:textColor="#E91E63"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="220dp"
+        android:background="#FFEB3B"
+        android:text="Select Image"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/btn1"
+        app:layout_anchorGravity="top|center" />
+
+    <ImageView
+        android:id="@+id/pickedimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="300dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</android.support.design.widget.CoordinatorLayout>
